@@ -7,7 +7,7 @@ use Interop\Queue\Spec\MessageSpec;
 
 class FsMessageTest extends MessageSpec
 {
-    protected function createMessage()
+    protected function createMessage(): FsMessage
     {
         return new FsMessage();
     }
