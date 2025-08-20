@@ -100,7 +100,7 @@ class StubProcessor implements Processor
     /** @var Message */
     public $lastProcessedMessage;
 
-    public function process(Message $message, Context $context)
+    public function process(Message $message, Context $context): string | object
     {
         $this->lastProcessedMessage = $message;
 
